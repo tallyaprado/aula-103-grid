@@ -1,0 +1,73 @@
+body{
+    margin: 0%;
+    display: grid;
+    grid-template-areas: 'header header header header'
+                          'navbar navbar navbar navbar'
+                          'section section section aside'
+                          'footer footer footer footer';
+     grid-template-rows: 20vh 5vh 50vh 30vh;
+     grid-gap: 10px;  
+     grid-auto-columns: 24vw 24vw 24vw 24vw;                
+}
+header{
+    grid-area: header;
+    background-color:black;
+    display: flex;
+    justify-content: center;
+
+}
+header img{
+    height: 100%;
+    width: 90px;
+    border-radius: 100%;
+}
+nav{
+    grid-area: navbar;
+    background-color:khaki;
+    display: flex;
+    justify-content: space-around;
+}
+nav a{
+    color:black;
+    text-decoration: none;
+    font-size: 16px;
+
+}
+nav a.houver{
+    color:b(0, 0, 0);
+    text-decoration: underline;
+
+
+}
+section{
+    grid-area: section;
+    background-color:black(250, 232, 210);
+    background-image: url(https://st2.depositphotos.com/6456088/12456/v/950/depositphotos_124568772-stock-illustration-seamless-black-pattern-with-pony.jpg);
+    background-size: contain ;
+}
+aside{
+    grid-area: aside;
+    background-color: darksalmon;
+    text-align: center;
+    padding: 0 8px;
+    
+}
+aside h2,p{
+    color: blue;
+    font-family: 'Playball', cursive;
+}
+
+footer{
+    grid-area: footer;
+    background-color: chartreuse;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer div{
+    width: 200px;
+    height: 300px;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-around;
+}
